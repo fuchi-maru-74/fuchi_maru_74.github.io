@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>ふちまる Official Website</title>
+
+  <style>
+    /* =========================
+       基本設定
+    ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        "Noto Sans JP",
+        "Yu Gothic",
+        "Hiragino Kaku Gothic ProN",
+        sans-serif;
+
+      background: #f6f8ff;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+
+    /* =========================
+       ヘッダー
+    ========================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+
+      border-bottom: 1px solid #e5e8f5;
+    }
+
+    .header-inner {
+      max-width: 1100px;
+      margin: auto;
+
+      padding: 15px 25px;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+
+      color: #5146c7;
+    }
+
+    nav {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      font-size: 14px;
+      color: #555;
+
+      transition: 0.2s;
+    }
+
+    nav a:hover {
+      color: #5146c7;
+    }
+
+
+    /* =========================
+       メインビジュアル
+    ========================= */
+
+    .hero {
+      min-height: 560px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      padding: 80px 20px;
+
+      background:
+        radial-gradient(circle at 20% 20%, #dfe5ff, transparent 35%),
+        radial-gradient(circle at 80% 70%, #e9ddff, transparent 35%),
+        #f8f9ff;
+    }
+
+    .hero-content {
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      margin: 0;
+
+      font-size: clamp(42px, 8vw, 80px);
+
+      color: #40379c;
+
+      letter-spacing: 0.05em;
+    }
+
+    .hero p {
+      margin-top: 15px;
+
+      font-size: 18px;
+
+      color: #666;
+    }
+
+    .hero-button {
+      display: inline-block;
+
+      margin-top: 30px;
+      padding: 12px 30px;
+
+      border-radius: 999px;
+
+      background: #5146c7;
+      color: white;
+
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    .hero-button:hover {
+      transform: translateY(-3px);
+
+      box-shadow: 0 8px 20px rgba(81, 70, 199, 0.25);
+    }
+
+
+    /* =========================
+       共通セクション
+    ========================= */
+
+    main {
+      max-width: 1100px;
+
+      margin: auto;
+
+      padding: 70px 25px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .section-title {
+      margin-bottom: 35px;
+
+      text-align: center;
+    }
+
+    .section-title h2 {
+      margin: 0;
+
+      font-size: 32px;
+
+      color: #40379c;
+    }
+
+    .section-title p {
+      margin-top: 5px;
+
+      color: #888;
+    }
+
+
+    /* =========================
+       About
+    ========================= */
+
+    .about {
+      background: white;
+
+      padding: 35px;
+
+      border-radius: 20px;
+
+      box-shadow: 0 8px 30px rgba(60, 70, 120, 0.08);
+    }
+
+
+    /* =========================
+       カード
+    ========================= */
+
+    .cards {
+      display: grid;
+
+      grid-template-columns:
+        repeat(auto-fit, minmax(220px, 1fr));
+
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+
+      padding: 30px;
+
+      border-radius: 18px;
+
+      box-shadow: 0 8px 25px rgba(60, 70, 120, 0.07);
+
+      transition: 0.25s;
+
+      border: 1px solid #edf0fa;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+
+      box-shadow: 0 12px 30px rgba(60, 70, 120, 0.12);
+    }
+
+    .card-icon {
+      font-size: 35px;
+    }
+
+    .card h3 {
+      margin: 10px 0;
+
+      color: #5146c7;
+    }
+
+    .card p {
+      margin: 0;
+
+      color: #666;
+
+      font-size: 14px;
+    }
+
+
+    /* =========================
+       Links
+    ========================= */
+
+    .links {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 15px;
+    }
+
+    .link-button {
+      padding: 12px 25px;
+
+      border-radius: 999px;
+
+      background: white;
+
+      border: 1px solid #dfe2f2;
+
+      color: #5146c7;
+
+      transition: 0.2s;
+    }
+
+    .link-button:hover {
+      background: #5146c7;
+
+      color: white;
+
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       フッター
+    ========================= */
+
+    footer {
+      padding: 35px 20px;
+
+      text-align: center;
+
+      background: #272447;
+
+      color: #ddd;
+
+      font-size: 13px;
+    }
+
+
+    /* =========================
+       スマホ対応
+    ========================= */
+
+    @media (max-width: 700px) {
+
+      .header-inner {
+        flex-direction: column;
+
+        gap: 8px;
+      }
+
+      nav {
+        gap: 15px;
+      }
+
+      .hero {
+        min-height: 500px;
+      }
+
+      main {
+        padding: 50px 18px;
+      }
+
+      .about {
+        padding: 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- =========================
+       ヘッダー
+  ========================= -->
+
+  <header>
+
+    <div class="header-inner">
+
+      <div class="logo">
+        ふちまる
+      </div>
+
+      <nav>
+
+        <a href="#about">
+          About
+        </a>
+
+        <a href="#activities">
+          Activities
+        </a>
+
+        <a href="#links">
+          Links
+        </a>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+
+
+  <!-- =========================
+       メイン
+  ========================= -->
+
+  <div class="hero">
+
+    <div class="hero-content">
+
+      <h1>ふちまる</h1>
+
+      <p>
+        Music / Railway / Game / Creative
+      </p>
+
+      <a
+        class="hero-button"
+        href="#about"
+      >
+        このサイトについて
+      </a>
+
+    </div>
+
+  </div>
+
+
+
+  <main>
+
+
+    <!-- =========================
+         About
+    ========================= -->
+
+    <section id="about">
+
+      <div class="section-title">
+
+        <h2>About</h2>
+
+        <p>ふちまるについて</p>
+
+      </div>
+
+
+      <div class="about">
+
+        <p>
+          こんにちは、ふちまるです！
+        </p>
+
+        <p>
+          音楽や作詞、鉄道、ゲーム、イラストや
+          動画制作など、いろいろなことをしています。
+        </p>
+
+        <p>
+          このサイトでは、活動内容や作品、
+          各種リンクなどをまとめています。
+        </p>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         Activities
+    ========================= -->
+
+    <section id="activities">
+
+      <div class="section-title">
+
+        <h2>Activities</h2>
+
+        <p>好きなこと・活動</p>
+
+      </div>
+
+
+      <div class="cards">
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🎵
+          </div>
+
+          <h3>Music</h3>
+
+          <p>
+            作詞や音楽制作など。
+            自分だけの世界観を形にしています。
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🚃
+          </div>
+
+          <h3>Railway</h3>
+
+          <p>
+            鉄道を撮ったり、乗ったり、
+            音を楽しんだりしています。
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🎮
+          </div>
+
+          <h3>Game</h3>
+
+          <p>
+            ゲームもいろいろ遊びます。
+            プレイ記録なども紹介予定！
+          </p>
+
+        </div>
+
+
+        <div class="card">
+
+          <div class="card-icon">
+            🎨
+          </div>
+
+          <h3>Creative</h3>
+
+          <p>
+            イラスト、動画、Web制作など、
+            いろいろな創作に挑戦しています。
+          </p>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         Links
+    ========================= -->
+
+   <section id="links">
+
+  <div class="section-title">
+    <h2>Links</h2>
+    <p>各種リンク</p>
+  </div>
+
+
+  <div class="about">
+
+    <h3>YouTube</h3>
+
+    <div class="links">
+
+      <a
+        class="link-button"
+        href="https://youtube.com/@fuchi_maru_74"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube メイン
+      </a>
+
+      <a
+        class="link-button"
+        href="https://youtube.com/@puchi_maru_74"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube サブ
+      </a>
+
+      <a
+        class="link-button"
+        href="https://youtube.com/@yoisupe_fuchi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        YouTube サークル
+      </a>
+
+    </div>
+
+
+    <h3>X</h3>
+
+    <div class="links">
+
+      <a
+        class="link-button"
+        href="https://x.com/fuchi_maru_74"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        X 日常
+      </a>
+
+      <a
+        class="link-button"
+        href="https://x.com/YoiSupe_fuchi"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        X サークル
+      </a>
+
+      <a
+        class="link-button"
+        href="https://x.com/fest_fm"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        X 最新情報
+      </a>
+
+    </div>
+
+
+    <h3>Other</h3>
+
+    <div class="links">
+
+      <a
+        class="link-button"
+        href="https://www.pixiv.net/users/119366601"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        pixiv
+      </a>
+
+      <a
+        class="link-button"
+        href="https://fuchi-maru-74.booth.pm/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        BOOTH
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    
+  <!-- =========================
+       Footer
+  ========================= -->
+
+  <footer>
+
+    © 2026 ふちまるプロジェクト
+
+  </footer>
+
+
+</body>
+</html>
