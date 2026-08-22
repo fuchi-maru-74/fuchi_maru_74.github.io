@@ -52,6 +52,60 @@
       color: #5146c7;
     }
 
+    /* 作品一覧 */
+
+    .works {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .work {
+      background: white;
+      padding: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
+      transition: 0.2s;
+    }
+
+    .work:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(60, 70, 120, 0.14);
+    }
+
+    .work h3 {
+      margin-top: 0;
+      color: #5146c7;
+      font-size: 22px;
+    }
+
+    .work p {
+      margin-bottom: 8px;
+    }
+
+    .work-date {
+      font-size: 14px;
+      color: #777;
+    }
+
+    .work-button {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      background: #5146c7;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .work-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 12px rgba(81, 70, 199, 0.25);
+    }
+
+    /* 詳細 */
+
     .quote {
       margin: 25px 0;
       padding: 20px;
@@ -116,6 +170,7 @@
     }
 
     @media (max-width: 700px) {
+
       header h1 {
         font-size: 34px;
       }
@@ -128,10 +183,15 @@
         padding: 25px;
       }
 
+      .works {
+        grid-template-columns: 1fr;
+      }
+
       .info {
         grid-template-columns: 1fr;
         gap: 2px;
       }
+
     }
   </style>
 </head>
@@ -140,7 +200,9 @@
 <body>
 
 
-  <!-- Header -->
+  <!-- =========================
+       Header
+  ========================= -->
 
   <header>
 
@@ -157,7 +219,9 @@
   <main>
 
 
-    <!-- Activities -->
+    <!-- =========================
+         できること
+    ========================= -->
 
     <div class="section">
 
@@ -168,21 +232,144 @@
       </p>
 
       <ul>
+
         <li>作詞</li>
         <li>作曲</li>
         <li>編曲</li>
         <li>プロデュース</li>
         <li>映像制作</li>
         <li>その他、音楽に関する制作</li>
+
       </ul>
 
     </div>
 
 
 
-    <!-- Song -->
+    <!-- =========================
+         作品一覧
+    ========================= -->
 
     <div class="section">
+
+      <h2>🎼 作品一覧</h2>
+
+      <div class="works">
+
+
+        <!-- 永久に光る星 -->
+
+        <div class="work">
+
+          <h3>🌟 永久に光る星</h3>
+
+          <p>
+            宵闇スペクトル
+          </p>
+
+          <p class="work-date">
+            初公開：2026年3月9日
+          </p>
+
+          <a
+            class="work-button"
+            href="#eien-ni-hikaru-hoshi"
+          >
+            詳細を見る →
+          </a>
+
+        </div>
+
+
+
+        <!-- 春の随に -->
+
+        <div class="work">
+
+          <h3>🌸 春の随に</h3>
+
+          <p>
+            たまゆら
+          </p>
+
+          <p class="work-date">
+            2026年8月14日
+          </p>
+
+          <a
+            class="work-button"
+            href="#haru-no-mamani"
+          >
+            詳細を見る →
+          </a>
+
+        </div>
+
+
+
+        <!-- 流失 -->
+
+        <div class="work">
+
+          <h3>💧 流失</h3>
+
+          <p>
+            たまゆら
+          </p>
+
+          <p class="work-date">
+            2026年8月15日
+          </p>
+
+          <a
+            class="work-button"
+            href="#ryuushitsu"
+          >
+            詳細を見る →
+          </a>
+
+        </div>
+
+
+
+        <!-- 時雨の涙 -->
+
+        <div class="work">
+
+          <h3>🌧️ 時雨の涙</h3>
+
+          <p>
+            たまゆら
+          </p>
+
+          <p class="work-date">
+            2026年8月17日
+          </p>
+
+          <a
+            class="work-button"
+            href="#shigure-no-shiwaza"
+          >
+            詳細を見る →
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
+
+    <!-- =========================
+         永久に光る星
+    ========================= -->
+
+    <div
+      id="eien-ni-hikaru-hoshi"
+      class="section"
+    >
 
       <h2>🌟 永久に光る星</h2>
 
@@ -193,7 +380,7 @@
 
       <div class="message">
 
-        <h3>⇩ ふちまるからのコトバ</h3>
+        <h3>ふちまるからのコトバ</h3>
 
         <p>
           宵闇スペクトルデビュー曲！
@@ -210,15 +397,8 @@
 
       </div>
 
-    </div>
 
-
-
-    <!-- Information -->
-
-    <div class="section">
-
-      <h2>作品情報</h2>
+      <h3>作品情報</h3>
 
       <div class="info">
 
@@ -256,34 +436,13 @@
 
 
 
-    <!-- Touhou Guideline -->
+    <!-- =========================
+         関連リンク
+    ========================= -->
 
     <div class="section">
 
-      <h2>東方Project 二次創作について</h2>
-
-      <p>
-        この作品は東方Projectの二次創作です。
-      </p>
-
-      <a
-        class="link-button"
-        href="https://touhou-project.news/guideline/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        東方Project 二次創作ガイドライン
-      </a>
-
-    </div>
-
-
-
-    <!-- Links -->
-
-    <div class="section">
-
-      <h2>🔗 関連リンク</h2>
+      <h2>🔗 永久に光る星 関連リンク</h2>
 
       <div class="links">
 
@@ -329,7 +488,51 @@
 
 
 
-    <!-- Back -->
+    <!-- =========================
+         東方Project
+    ========================= -->
+
+    <div class="section">
+
+      <h2>東方Project 二次創作について</h2>
+
+      <p>
+        この作品は東方Projectの二次創作です。
+      </p>
+
+      <a
+        class="link-button"
+        href="https://touhou-project.news/guideline/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        東方Project 二次創作ガイドライン
+      </a>
+
+    </div>
+
+
+
+    <!-- =========================
+         今後追加予定
+    ========================= -->
+
+    <div class="section">
+
+      <h2>📌 今後追加予定</h2>
+
+      <p>
+        作品一覧の楽曲は、今後さらに詳細情報や
+        関連リンクを追加していく予定です。
+      </p>
+
+    </div>
+
+
+
+    <!-- =========================
+         Back
+    ========================= -->
 
     <a
       class="back"
@@ -343,7 +546,9 @@
 
 
 
-  <!-- Footer -->
+  <!-- =========================
+       Footer
+  ========================= -->
 
   <footer>
 
