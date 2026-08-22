@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>音楽 | ふちまるプロジェクト</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background: #f6f8ff;
+      color: #333;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #5146c7;
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 42px;
+    }
+
+    header p {
+      margin-top: 8px;
+      font-size: 17px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 25px;
+      border-radius: 18px;
+      box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #5146c7;
+    }
+
+    .quote {
+      margin: 25px 0;
+      padding: 20px;
+      border-left: 5px solid #5146c7;
+      background: #f4f3ff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .message {
+      background: #f8f8ff;
+      padding: 20px;
+      border-radius: 12px;
+    }
+
+    .info {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 8px 15px;
+    }
+
+    .info strong {
+      color: #5146c7;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .link-button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 999px;
+      background: #5146c7;
+      color: white;
+      text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .link-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
+    }
+
+    .back {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 25px;
+      border-radius: 999px;
+      background: #5146c7;
+      color: white;
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #272447;
+      color: white;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      main {
+        padding: 35px 15px;
+      }
+
+      .section {
+        padding: 25px;
+      }
+
+      .info {
+        grid-template-columns: 1fr;
+        gap: 2px;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+
+
+  <!-- Header -->
+
+  <header>
+
+    <h1>🎵 Music</h1>
+
+    <p>
+      音楽制作・作品紹介
+    </p>
+
+  </header>
+
+
+
+  <main>
+
+
+    <!-- Activities -->
+
+    <div class="section">
+
+      <h2>できること</h2>
+
+      <p>
+        音楽制作全般
+      </p>
+
+      <ul>
+        <li>作詞</li>
+        <li>作曲</li>
+        <li>編曲</li>
+        <li>プロデュース</li>
+        <li>映像制作</li>
+        <li>その他、音楽に関する制作</li>
+      </ul>
+
+    </div>
+
+
+
+    <!-- Song -->
+
+    <div class="section">
+
+      <h2>🌟 永久に光る星</h2>
+
+      <div class="quote">
+        君となら燃え尽きない
+      </div>
+
+
+      <div class="message">
+
+        <h3>⇩ ふちまるからのコトバ</h3>
+
+        <p>
+          宵闇スペクトルデビュー曲！
+        </p>
+
+        <p>
+          ということで今回は「永久に光る星」という楽曲を
+          作らせて頂きました！
+        </p>
+
+        <p>
+          映像がちょっと乱雑ですかね(笑)
+        </p>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Information -->
+
+    <div class="section">
+
+      <h2>作品情報</h2>
+
+      <div class="info">
+
+        <strong>タイトル</strong>
+        <span>永久に光る星</span>
+
+        <strong>サークル</strong>
+        <span>宵闇スペクトル</span>
+
+        <strong>原曲</strong>
+        <span>
+          星の器 ～ Casket of Star<br>
+          恋色マスタースパーク<br>
+          永遠の巫女
+        </span>
+
+        <strong>原曲製作者</strong>
+        <span>ZUN</span>
+
+        <strong>編曲</strong>
+        <span>ふちまる</span>
+
+        <strong>歌唱</strong>
+        <span>ふちまる</span>
+
+        <strong>映像</strong>
+        <span>ふちまる</span>
+
+        <strong>初公開</strong>
+        <span>2026年3月9日</span>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Touhou Guideline -->
+
+    <div class="section">
+
+      <h2>東方Project 二次創作について</h2>
+
+      <p>
+        この作品は東方Projectの二次創作です。
+      </p>
+
+      <a
+        class="link-button"
+        href="https://touhou-project.news/guideline/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        東方Project 二次創作ガイドライン
+      </a>
+
+    </div>
+
+
+
+    <!-- Links -->
+
+    <div class="section">
+
+      <h2>🔗 関連リンク</h2>
+
+      <div class="links">
+
+        <a
+          class="link-button"
+          href="https://youtu.be/iC-2VjkpS6A"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube版
+        </a>
+
+        <a
+          class="link-button"
+          href="https://youtube.com/shorts/9SSgkrKLEVw"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          YouTube ショート版
+        </a>
+
+        <a
+          class="link-button"
+          href="https://www.instagram.com/reel/DVs_ogdAvzn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Instagram ショート版
+        </a>
+
+        <a
+          class="link-button"
+          href="https://www.nicovideo.jp/watch/sm46065331"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ニコニコ動画版
+        </a>
+
+      </div>
+
+    </div>
+
+
+
+    <!-- Back -->
+
+    <a
+      class="back"
+      href="index.html"
+    >
+      ← トップページへ戻る
+    </a>
+
+
+  </main>
+
+
+
+  <!-- Footer -->
+
+  <footer>
+
+    © 2026 ふちまるプロジェクト
+
+  </footer>
+
+
+</body>
+</html>
