@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <title>ふちまる/たまゆら/宵闇スペクトル 公式サイト</title>
 
   <style>
+
     /* =========================
        基本設定
     ========================= */
@@ -259,6 +261,61 @@
 
 
     /* =========================
+       Activities リンクカード
+    ========================= */
+
+    #activities .card {
+      display: block;
+
+      color: inherit;
+      text-decoration: none;
+
+      cursor: pointer;
+
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+    }
+
+    #activities .card:hover {
+      transform: translateY(-8px);
+
+      box-shadow:
+        0 14px 35px rgba(60, 70, 120, 0.15);
+
+      border-color: #d8d5ff;
+    }
+
+    #activities .card-icon {
+      font-size: 40px;
+    }
+
+    #activities .card h3 {
+      font-size: 23px;
+    }
+
+    #activities .card-link {
+      display: inline-block;
+
+      margin-top: 18px;
+
+      color: #5146c7;
+
+      font-size: 14px;
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    #activities .card:hover .card-link {
+      color: #40379c;
+
+      transform: translateX(4px);
+    }
+
+
+    /* =========================
        Links
     ========================= */
 
@@ -292,6 +349,106 @@
       color: white;
 
       transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       News
+    ========================= */
+
+    #news {
+      position: relative;
+      overflow: hidden;
+
+      padding: 70px 20px;
+
+      background: #f5f7ff;
+    }
+
+    .news-inner {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    #news h2 {
+      margin: 0;
+
+      text-align: center;
+
+      color: #5146c7;
+
+      font-size: 32px;
+    }
+
+    .news-subtitle {
+      text-align: center;
+
+      margin-top: 5px;
+      margin-bottom: 30px;
+
+      color: #666;
+    }
+
+    .news-list {
+      background: white;
+
+      border-radius: 18px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 8px 25px rgba(60, 70, 120, 0.08);
+    }
+
+    .news-item {
+      padding: 18px 25px;
+
+      border-bottom: 1px solid #eee;
+    }
+
+    .news-item:last-child {
+      border-bottom: none;
+    }
+
+    .news-date {
+      color: #5146c7;
+
+      font-size: 14px;
+
+      font-weight: bold;
+    }
+
+    .news-title {
+      margin-top: 3px;
+
+      font-size: 16px;
+    }
+
+    .news-more {
+      display: block;
+
+      width: fit-content;
+
+      margin: 25px auto 0;
+
+      padding: 10px 25px;
+
+      border-radius: 999px;
+
+      background: #5146c7;
+
+      color: white;
+
+      text-decoration: none;
+
+      transition: 0.2s;
+    }
+
+    .news-more:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 6px 15px rgba(81, 70, 199, 0.25);
     }
 
 
@@ -340,9 +497,26 @@
         padding: 25px;
       }
 
+      #news {
+        padding: 50px 15px;
+      }
+
+      #news h2 {
+        font-size: 28px;
+      }
+
+      .news-item {
+        padding: 16px 20px;
+      }
+
+      .news-title {
+        font-size: 15px;
+      }
+
     }
 
   </style>
+
 </head>
 
 
@@ -371,6 +545,10 @@
           Activities
         </a>
 
+        <a href="#news">
+          News
+        </a>
+
         <a href="#links">
           Links
         </a>
@@ -384,14 +562,16 @@
 
 
   <!-- =========================
-       メイン
+       メインビジュアル
   ========================= -->
 
   <div class="hero">
 
     <div class="hero-content">
 
-      <h1>ふちまる/たまゆら/宵闇スペクトル</h1>
+      <h1>
+        ふちまる/たまゆら/宵闇スペクトル
+      </h1>
 
       <p>
         Music / Railway / Game / Creative
@@ -421,9 +601,13 @@
 
       <div class="section-title">
 
-        <h2>About</h2>
+        <h2>
+          About
+        </h2>
 
-        <p>たまゆらについて</p>
+        <p>
+          たまゆらについて
+        </p>
 
       </div>
 
@@ -451,189 +635,89 @@
 
 
 
-<!-- =========================
-     News
-========================= -->
+    <!-- =========================
+         News
+    ========================= -->
 
-<section id="news">
+    <section id="news">
 
-  <div class="news-inner">
+      <div class="news-inner">
 
-    <h2>📰 News</h2>
+        <h2>
+          📰 News
+        </h2>
 
-    <p class="news-subtitle">
-      最新情報
-    </p>
+        <p class="news-subtitle">
+          最新情報
+        </p>
 
-    <div class="news-list">
 
-      <!-- News 1 -->
+        <div class="news-list">
 
-     <div class="news-item">
 
-        <div class="news-date">
-          2026/08/22 21:54
+          <!-- News 1 -->
+
+          <div class="news-item">
+
+            <div class="news-date">
+              2026/08/22 21:54
+            </div>
+
+            <div class="news-title">
+              HPをバージョンアップをしました！
+            </div>
+
+          </div>
+
+
+          <!-- News 2 -->
+
+          <div class="news-item">
+
+            <div class="news-date">
+              2026/08/22 18:07
+            </div>
+
+            <div class="news-title">
+              公式サイトを公開しました！
+            </div>
+
+          </div>
+
+
+          <!-- News 3 -->
+
+          <div class="news-item">
+
+            <div class="news-date">
+              2026/08/21 21:00
+            </div>
+
+            <div class="news-title">
+              ふちまるプロジェクトのサイト制作を開始しました！
+            </div>
+
+          </div>
+
+
         </div>
 
-        <div class="news-title">
-          HPをバージョンアップをしました！
-        </div>
+
+        <!-- Newsページへのリンク -->
+
+        <a
+          class="news-more"
+          href="./news.html"
+        >
+          News 最新情報を見る →
+        </a>
 
       </div>
-      
 
-      <!-- News 2 -->
-
-       <div class="news-item">
-
-        <div class="news-date">
-          2026/08/22 18:07
-        </div>
-
-        <div class="news-title">
-          公式サイトを公開しました！
-        </div>
-
-      </div>
+    </section>
 
 
 
-      <!-- News 3 -->
-
-      <div class="news-item">
-
-        <div class="news-date">
-          2026/08/21 21:00
-        </div>
-
-        <div class="news-title">
-          ふちまるプロジェクトのサイト制作を開始しました！
-        </div>
-
-      </div>
-
-    </div>
-
-
-    <!-- Newsページへのリンク -->
-
-    <a
-      class="news-more"
-      href="./news.html"
-    >
-      News 最新情報を見る →
-    </a>
-
-  </div>
-
-</section>
-
-
-<style>
-
-/* =========================
-   News
-========================= */
-
-#news {
-  position: relative;
-  overflow: hidden;
-  padding: 70px 20px;
-  background: #f5f7ff;
-}
-
-.news-inner {
-  max-width: 900px;
-  margin: auto;
-}
-
-#news h2 {
-  margin: 0;
-  text-align: center;
-  color: #5146c7;
-  font-size: 32px;
-}
-
-.news-subtitle {
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 30px;
-  color: #666;
-}
-
-.news-list {
-  background: white;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
-}
-
-.news-item {
-  padding: 18px 25px;
-  border-bottom: 1px solid #eee;
-}
-
-.news-item:last-child {
-  border-bottom: none;
-}
-
-.news-date {
-  color: #5146c7;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.news-title {
-  margin-top: 3px;
-  font-size: 16px;
-}
-
-.news-more {
-  display: block;
-  width: fit-content;
-  margin: 25px auto 0;
-  padding: 10px 25px;
-  border-radius: 999px;
-  background: #5146c7;
-  color: white;
-  text-decoration: none;
-  transition: 0.2s;
-}
-
-.news-more:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
-}
-
-
-/* =========================
-   Mobile
-========================= */
-
-@media (max-width: 700px) {
-
-  #news {
-    padding: 50px 15px;
-  }
-
-  #news h2 {
-    font-size: 28px;
-  }
-
-  .news-item {
-    padding: 16px 20px;
-  }
-
-  .news-title {
-    font-size: 15px;
-  }
-
-}
-
-</style>
-    
-
-    
     <!-- =========================
          Activities
     ========================= -->
@@ -642,9 +726,13 @@
 
       <div class="section-title">
 
-        <h2>Activities</h2>
+        <h2>
+          Activities
+        </h2>
 
-        <p>好きなこと・活動</p>
+        <p>
+          好きなこと・活動
+        </p>
 
       </div>
 
@@ -652,76 +740,123 @@
       <div class="cards">
 
 
-        <div class="card">
+        <!-- =========================
+             Music
+        ========================= -->
+
+        <a
+          href="./music.html"
+          class="card"
+        >
 
           <div class="card-icon">
             🎵
           </div>
 
           <h3>
-  <a href="music.html">Music</a>
-</h3>
+            Music
+          </h3>
 
           <p>
-            作詞や音楽制作など。
+            作詞や音楽制作など。<br>
             自分だけの世界観を形にしています。
           </p>
 
-        </div>
+          <span class="card-link">
+            詳しく見る →
+          </span>
+
+        </a>
 
 
-        <div class="card">
+
+        <!-- =========================
+             Railway
+        ========================= -->
+
+        <a
+          href="./railway.html"
+          class="card"
+        >
 
           <div class="card-icon">
             🚃
           </div>
 
           <h3>
-  <a href="./railway.html">Railway</a>
-</h3>
+            Railway
+          </h3>
 
           <p>
-            鉄道を撮ったり、乗ったり、
+            鉄道を撮ったり、乗ったり、<br>
             音を楽しんだりしています。
           </p>
 
-        </div>
+          <span class="card-link">
+            詳しく見る →
+          </span>
+
+        </a>
 
 
-        <div class="card">
+
+        <!-- =========================
+             Game
+        ========================= -->
+
+        <a
+          href="./games.html"
+          class="card"
+        >
 
           <div class="card-icon">
             🎮
           </div>
 
-   <h3>
-  <a href="./games.html">Game</a>
-</h3>
+          <h3>
+            Game
+          </h3>
 
           <p>
-            ゲームもいろいろ遊びます。
+            ゲームもいろいろ遊びます。<br>
             プレイ記録なども紹介予定！
           </p>
 
-        </div>
+          <span class="card-link">
+            詳しく見る →
+          </span>
+
+        </a>
 
 
-        <div class="card">
+
+        <!-- =========================
+             Creative
+        ========================= -->
+
+        <a
+          href="./creative.html"
+          class="card"
+        >
 
           <div class="card-icon">
             🎨
           </div>
 
           <h3>
-  <a href="./creative.html">Creative</a>
-</h3>
+            Creative
+          </h3>
 
           <p>
-            イラスト、動画、Web制作など、
+            イラスト、動画、Web制作など、<br>
             いろいろな創作に挑戦しています。
           </p>
 
-        </div>
+          <span class="card-link">
+            詳しく見る →
+          </span>
+
+        </a>
 
 
       </div>
@@ -734,205 +869,236 @@
          Links
     ========================= -->
 
-<section id="links">
+    <section id="links">
 
-  <div class="section-title">
-    <h2>Links</h2>
-    <p>各種リンク</p>
-  </div>
+      <div class="section-title">
 
+        <h2>
+          Links
+        </h2>
 
-  <div class="about">
+        <p>
+          各種リンク
+        </p>
 
-    <!-- YouTube -->
-    <h3>YouTube</h3>
-
-    <div class="links">
-
-      <a
-        class="link-button"
-        href="https://youtube.com/@fuchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube メインアカウント
-      </a>
-
-      <a
-        class="link-button"
-        href="https://youtube.com/@puchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube サブアカウント
-      </a>
-
-      <a
-        class="link-button"
-        href="https://youtube.com/@yoisupe_fuchi"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        YouTube サークルアカウント
-      </a>
-
-    </div>
+      </div>
 
 
-    <!-- X -->
-    <h3>X</h3>
-
-    <div class="links">
-
-      <a
-        class="link-button"
-        href="https://x.com/fuchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        X 日常アカウント
-      </a>
-
-      <a
-        class="link-button"
-        href="https://x.com/YoiSupe_fuchi"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        X サークルアカウント
-      </a>
-
-      <a
-        class="link-button"
-        href="https://x.com/fest_fm"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ふちまる祭＆たまゆら祭 最新情報
-      </a>
-
-    </div>
+      <div class="about">
 
 
-    <!-- SNS -->
-    <h3>SNS</h3>
+        <!-- YouTube -->
 
-    <div class="links">
+        <h3>
+          YouTube
+        </h3>
 
-      <a
-        class="link-button"
-        href="https://www.instagram.com/fuchi_maru_yoisupe/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Instagram
-      </a>
+        <div class="links">
 
-      <a
-        class="link-button"
-        href="https://www.tiktok.com/@fuchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        TikTok
-      </a>
+          <a
+            class="link-button"
+            href="https://youtube.com/@fuchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube メインアカウント
+          </a>
 
-      <a
-        class="link-button"
-        href="https://bsky.app/profile/fuchimaru74.bsky.social"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Bluesky
-      </a>
+          <a
+            class="link-button"
+            href="https://youtube.com/@puchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube サブアカウント
+          </a>
 
-    </div>
+          <a
+            class="link-button"
+            href="https://youtube.com/@yoisupe_fuchi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            YouTube サークルアカウント
+          </a>
 
-
-    <!-- Creative -->
-    <h3>Creative</h3>
-
-    <div class="links">
-
-      <a
-        class="link-button"
-        href="https://www.pixiv.net/users/119366601"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        pixiv
-      </a>
-
-      <a
-        class="link-button"
-        href="https://fuchi-maru-74.booth.pm/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        BOOTH
-      </a>
-
-      <a
-        class="link-button"
-        href="https://note.com/fuchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        note
-      </a>
-
-      <a
-        class="link-button"
-        href="https://marshmallow-qa.com/adz9au4f2n11to0"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        マシュマロ
-      </a>
-
-    </div>
+        </div>
 
 
-    <!-- Streaming -->
-    <h3>Streaming</h3>
 
-    <div class="links">
+        <!-- X -->
 
-      <a
-        class="link-button"
-        href="https://www.twitch.tv/fuchi_maru_74"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Twitch
-      </a>
+        <h3>
+          X
+        </h3>
 
-      <a
-        class="link-button"
-        href="https://twitcasting.tv/g:100019583357230948753"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ツイキャス
-      </a>
+        <div class="links">
 
-      <a
-        class="link-button"
-        href="https://www.nicovideo.jp/user/141833051"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        ニコニコ
-      </a>
+          <a
+            class="link-button"
+            href="https://x.com/fuchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X 日常アカウント
+          </a>
 
-    </div>
+          <a
+            class="link-button"
+            href="https://x.com/YoiSupe_fuchi"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            X サークルアカウント
+          </a>
 
-  </div>
+          <a
+            class="link-button"
+            href="https://x.com/fest_fm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ふちまる祭＆たまゆら祭 最新情報
+          </a>
 
-</section>
+        </div>
 
 
-    
+
+        <!-- SNS -->
+
+        <h3>
+          SNS
+        </h3>
+
+        <div class="links">
+
+          <a
+            class="link-button"
+            href="https://www.instagram.com/fuchi_maru_yoisupe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Instagram
+          </a>
+
+          <a
+            class="link-button"
+            href="https://www.tiktok.com/@fuchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TikTok
+          </a>
+
+          <a
+            class="link-button"
+            href="https://bsky.app/profile/fuchimaru74.bsky.social"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Bluesky
+          </a>
+
+        </div>
+
+
+
+        <!-- Creative -->
+
+        <h3>
+          Creative
+        </h3>
+
+        <div class="links">
+
+          <a
+            class="link-button"
+            href="https://www.pixiv.net/users/119366601"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            pixiv
+          </a>
+
+          <a
+            class="link-button"
+            href="https://fuchi-maru-74.booth.pm/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            BOOTH
+          </a>
+
+          <a
+            class="link-button"
+            href="https://note.com/fuchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            note
+          </a>
+
+          <a
+            class="link-button"
+            href="https://marshmallow-qa.com/adz9au4f2n11to0"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            マシュマロ
+          </a>
+
+        </div>
+
+
+
+        <!-- Streaming -->
+
+        <h3>
+          Streaming
+        </h3>
+
+        <div class="links">
+
+          <a
+            class="link-button"
+            href="https://www.twitch.tv/fuchi_maru_74"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Twitch
+          </a>
+
+          <a
+            class="link-button"
+            href="https://twitcasting.tv/g:100019583357230948753"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ツイキャス
+          </a>
+
+          <a
+            class="link-button"
+            href="https://www.nicovideo.jp/user/141833051"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ニコニコ
+          </a>
+
+        </div>
+
+
+      </div>
+
+    </section>
+
+
+  </main>
+
+
+
   <!-- =========================
        Footer
   ========================= -->
@@ -945,4 +1111,5 @@
 
 
 </body>
+
 </html>
