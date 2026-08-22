@@ -2,10 +2,18 @@
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>ふちまる/たまゆら/宵闇スペクトル 公式サイト</title>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>
+    ふちまる/たまゆら/宵闇スペクトル 公式サイト
+  </title>
+
 
   <style>
 
@@ -23,6 +31,7 @@
 
     body {
       margin: 0;
+
       font-family:
         "Noto Sans JP",
         "Yu Gothic",
@@ -30,13 +39,32 @@
         sans-serif;
 
       background: #f6f8ff;
+
       color: #333;
+
       line-height: 1.8;
     }
 
     a {
       color: inherit;
+
       text-decoration: none;
+    }
+
+
+    /* =========================
+       スクロール位置調整
+       固定ヘッダーに隠れないようにする
+    ========================= */
+
+    section {
+      margin-bottom: 80px;
+
+      scroll-margin-top: 75px;
+    }
+
+    #news {
+      scroll-margin-top: 75px;
     }
 
 
@@ -46,28 +74,37 @@
 
     header {
       position: sticky;
+
       top: 0;
+
       z-index: 100;
 
-      background: rgba(255, 255, 255, 0.9);
+      background:
+        rgba(255, 255, 255, 0.9);
+
       backdrop-filter: blur(10px);
 
-      border-bottom: 1px solid #e5e8f5;
+      border-bottom:
+        1px solid #e5e8f5;
     }
 
     .header-inner {
       max-width: 1100px;
+
       margin: auto;
 
       padding: 15px 25px;
 
       display: flex;
+
       justify-content: space-between;
+
       align-items: center;
     }
 
     .logo {
       font-size: 22px;
+
       font-weight: bold;
 
       color: #5146c7;
@@ -75,11 +112,13 @@
 
     nav {
       display: flex;
+
       gap: 25px;
     }
 
     nav a {
       font-size: 14px;
+
       color: #555;
 
       transition: 0.2s;
@@ -98,7 +137,9 @@
       min-height: 560px;
 
       display: flex;
+
       justify-content: center;
+
       align-items: center;
 
       text-align: center;
@@ -106,8 +147,18 @@
       padding: 80px 20px;
 
       background:
-        radial-gradient(circle at 20% 20%, #dfe5ff, transparent 35%),
-        radial-gradient(circle at 80% 70%, #e9ddff, transparent 35%),
+        radial-gradient(
+          circle at 20% 20%,
+          #dfe5ff,
+          transparent 35%
+        ),
+
+        radial-gradient(
+          circle at 80% 70%,
+          #e9ddff,
+          transparent 35%
+        ),
+
         #f8f9ff;
     }
 
@@ -118,7 +169,8 @@
     .hero h1 {
       margin: 0;
 
-      font-size: clamp(42px, 8vw, 80px);
+      font-size:
+        clamp(42px, 8vw, 80px);
 
       color: #40379c;
 
@@ -137,11 +189,13 @@
       display: inline-block;
 
       margin-top: 30px;
+
       padding: 12px 30px;
 
       border-radius: 999px;
 
       background: #5146c7;
+
       color: white;
 
       font-weight: bold;
@@ -152,7 +206,9 @@
     .hero-button:hover {
       transform: translateY(-3px);
 
-      box-shadow: 0 8px 20px rgba(81, 70, 199, 0.25);
+      box-shadow:
+        0 8px 20px
+        rgba(81, 70, 199, 0.25);
     }
 
 
@@ -166,10 +222,6 @@
       margin: auto;
 
       padding: 70px 25px;
-    }
-
-    section {
-      margin-bottom: 80px;
     }
 
     .section-title {
@@ -204,7 +256,9 @@
 
       border-radius: 20px;
 
-      box-shadow: 0 8px 30px rgba(60, 70, 120, 0.08);
+      box-shadow:
+        0 8px 30px
+        rgba(60, 70, 120, 0.08);
     }
 
 
@@ -216,39 +270,58 @@
       display: grid;
 
       grid-template-columns:
-        repeat(auto-fit, minmax(220px, 1fr));
+        repeat(
+          auto-fit,
+          minmax(220px, 1fr)
+        );
 
       gap: 20px;
     }
 
     .card {
+      display: block;
+
       background: white;
 
       padding: 30px;
 
       border-radius: 18px;
 
-      box-shadow: 0 8px 25px rgba(60, 70, 120, 0.07);
+      box-shadow:
+        0 8px 25px
+        rgba(60, 70, 120, 0.07);
 
-      transition: 0.25s;
+      border:
+        1px solid #edf0fa;
 
-      border: 1px solid #edf0fa;
+      transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        border-color 0.25s ease;
+
+      cursor: pointer;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
 
-      box-shadow: 0 12px 30px rgba(60, 70, 120, 0.12);
+      box-shadow:
+        0 14px 35px
+        rgba(60, 70, 120, 0.15);
+
+      border-color: #d8d5ff;
     }
 
     .card-icon {
-      font-size: 35px;
+      font-size: 40px;
     }
 
     .card h3 {
       margin: 10px 0;
 
       color: #5146c7;
+
+      font-size: 23px;
     }
 
     .card p {
@@ -259,43 +332,7 @@
       font-size: 14px;
     }
 
-
-    /* =========================
-       Activities リンクカード
-    ========================= */
-
-    #activities .card {
-      display: block;
-
-      color: inherit;
-      text-decoration: none;
-
-      cursor: pointer;
-
-      transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        border-color 0.25s ease;
-    }
-
-    #activities .card:hover {
-      transform: translateY(-8px);
-
-      box-shadow:
-        0 14px 35px rgba(60, 70, 120, 0.15);
-
-      border-color: #d8d5ff;
-    }
-
-    #activities .card-icon {
-      font-size: 40px;
-    }
-
-    #activities .card h3 {
-      font-size: 23px;
-    }
-
-    #activities .card-link {
+    .card-link {
       display: inline-block;
 
       margin-top: 18px;
@@ -303,12 +340,13 @@
       color: #5146c7;
 
       font-size: 14px;
+
       font-weight: bold;
 
       transition: 0.2s;
     }
 
-    #activities .card:hover .card-link {
+    .card:hover .card-link {
       color: #40379c;
 
       transform: translateX(4px);
@@ -336,7 +374,8 @@
 
       background: white;
 
-      border: 1px solid #dfe2f2;
+      border:
+        1px solid #dfe2f2;
 
       color: #5146c7;
 
@@ -358,6 +397,7 @@
 
     #news {
       position: relative;
+
       overflow: hidden;
 
       padding: 70px 20px;
@@ -367,6 +407,7 @@
 
     .news-inner {
       max-width: 900px;
+
       margin: auto;
     }
 
@@ -384,6 +425,7 @@
       text-align: center;
 
       margin-top: 5px;
+
       margin-bottom: 30px;
 
       color: #666;
@@ -397,13 +439,15 @@
       overflow: hidden;
 
       box-shadow:
-        0 8px 25px rgba(60, 70, 120, 0.08);
+        0 8px 25px
+        rgba(60, 70, 120, 0.08);
     }
 
     .news-item {
       padding: 18px 25px;
 
-      border-bottom: 1px solid #eee;
+      border-bottom:
+        1px solid #eee;
     }
 
     .news-item:last-child {
@@ -439,8 +483,6 @@
 
       color: white;
 
-      text-decoration: none;
-
       transition: 0.2s;
     }
 
@@ -448,7 +490,8 @@
       transform: translateY(-2px);
 
       box-shadow:
-        0 6px 15px rgba(81, 70, 199, 0.25);
+        0 6px 15px
+        rgba(81, 70, 199, 0.25);
     }
 
 
@@ -483,6 +526,10 @@
 
       nav {
         gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
       }
 
       .hero {
@@ -495,6 +542,19 @@
 
       .about {
         padding: 25px;
+      }
+
+      /*
+        スマホではヘッダーが
+        2段になるため少し余裕を増やす
+      */
+
+      section {
+        scroll-margin-top: 105px;
+      }
+
+      #news {
+        scroll-margin-top: 105px;
       }
 
       #news {
@@ -520,7 +580,7 @@
 </head>
 
 
-<body>
+<body id="top">
 
 
   <!-- =========================
@@ -535,19 +595,38 @@
         ふちまる/たまゆら/宵闇スペクトル
       </div>
 
+
       <nav>
+
+        <!-- 一番上 -->
+
+        <a href="#top">
+          Top
+        </a>
+
+
+        <!-- About -->
 
         <a href="#about">
           About
         </a>
 
-        <a href="#news">
-          News
-        </a>
-        
+
+        <!-- Activities -->
+
         <a href="#activities">
           Activities
         </a>
+
+
+        <!-- News -->
+
+        <a href="#news">
+          News
+        </a>
+
+
+        <!-- Links -->
 
         <a href="#links">
           Links
@@ -644,7 +723,7 @@
       <div class="news-inner">
 
         <h2>
-          News
+          📰 News
         </h2>
 
         <p class="news-subtitle">
@@ -703,7 +782,7 @@
         </div>
 
 
-        <!-- Newsページへのリンク -->
+        <!-- Newsページ -->
 
         <a
           class="news-more"
@@ -740,9 +819,7 @@
       <div class="cards">
 
 
-        <!-- =========================
-             Music
-        ========================= -->
+        <!-- Music -->
 
         <a
           href="./music.html"
@@ -770,9 +847,7 @@
 
 
 
-        <!-- =========================
-             Railway
-        ========================= -->
+        <!-- Railway -->
 
         <a
           href="./railway.html"
@@ -800,9 +875,7 @@
 
 
 
-        <!-- =========================
-             Game
-        ========================= -->
+        <!-- Game -->
 
         <a
           href="./games.html"
@@ -830,9 +903,7 @@
 
 
 
-        <!-- =========================
-             Creative
-        ========================= -->
+        <!-- Creative -->
 
         <a
           href="./creative.html"
