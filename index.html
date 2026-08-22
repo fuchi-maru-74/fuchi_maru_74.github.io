@@ -450,6 +450,12 @@
 
 
 
+<!-- =========================
+     News
+========================= -->
+
+<style>
+
 /* =========================
    News
 ========================= */
@@ -498,10 +504,12 @@
   margin: 30px auto 0;
 }
 
+/* ニュース1件 */
 .news-item {
   display: flex;
   gap: 20px;
   align-items: center;
+
   padding: 18px 20px;
   margin-bottom: 12px;
 
@@ -511,15 +519,42 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
 }
 
+/* 日付 */
 .news-item .date {
   font-size: 0.9rem;
   color: #777;
   white-space: nowrap;
 }
 
+/* ニュース本文 */
 .news-item .text {
   font-weight: bold;
 }
+
+
+/* =========================
+   スマホ対応
+========================= */
+
+@media (max-width: 600px) {
+
+  #news {
+    padding: 55px 15px;
+  }
+
+  .news-item {
+    display: block;
+  }
+
+  .news-item .date {
+    display: block;
+    margin-bottom: 6px;
+  }
+
+}
+
+</style>
+
 
 <section id="news">
 
@@ -531,16 +566,32 @@
 
   </div>
 
+
   <div class="news">
 
     <div class="news-item">
-      <span class="date">2026/08/22 16:10</span>
-      <span class="text">サイトが完成しました！</span>
+
+      <span class="date">
+        2026/08/22 16:10
+      </span>
+
+      <span class="text">
+        サイトが完成しました！
+      </span>
+
     </div>
 
+
     <div class="news-item">
-      <span class="date">2026/08/22 16:10</span>
-      <span class="text">順次更新予定！</span>
+
+      <span class="date">
+        2026/08/22 16:10
+      </span>
+
+      <span class="text">
+        順次更新予定！
+      </span>
+
     </div>
 
   </div>
