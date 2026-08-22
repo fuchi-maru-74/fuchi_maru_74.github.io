@@ -44,6 +44,16 @@
 
     .game h2 {
       color: #5146c7;
+      margin-top: 0;
+    }
+
+    .game ul {
+      padding-left: 25px;
+      margin-bottom: 0;
+    }
+
+    .game li {
+      margin-bottom: 6px;
     }
 
     .back {
@@ -54,6 +64,12 @@
       background: #5146c7;
       color: white;
       text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .back:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
     }
 
     footer {
@@ -62,40 +78,222 @@
       background: #272447;
       color: white;
     }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 34px;
+      }
+
+      main {
+        padding: 35px 15px;
+      }
+
+      .game {
+        padding: 25px;
+      }
+    }
   </style>
 </head>
 
+
 <body>
 
+
+  <!-- =========================
+       Header
+  ========================= -->
+
   <header>
+
     <h1>🎮 Games</h1>
-    <p>ゲームについて</p>
+
+    <p>
+      ゲームのプレイ記録・実績
+    </p>
+
   </header>
+
+
+
+  <!-- =========================
+       Main
+  ========================= -->
 
   <main>
 
+
+    <!-- Tetris 99 -->
+
     <div class="game">
-      <h2>ゲームタイトル</h2>
 
-      <p>
-        ここにゲームについての説明を書きます。
-      </p>
+      <h2>🎮 Tetris 99</h2>
 
-      <p>
-        プレイ記録や攻略情報なども、
-        ここに追加できます。
-      </p>
+      <ul>
+
+        <li>プレイヤーLv.68</li>
+
+        <li>総プレイ時間：70時間3分16秒</li>
+
+        <li>テト1試合回数：826戦</li>
+
+        <li>テト1達成回数：50回</li>
+
+        <li>テトリス99 VIP テト1達成：1戦目</li>
+
+        <li>テトリス99 VIP テト1達成回数：1回</li>
+
+        <li>チームバトル試合回数：117戦</li>
+
+        <li>チームバトル テト1達成回数：14回</li>
+
+      </ul>
+
     </div>
 
-    <a class="back" href="index.html">
+
+
+    <!-- 東方自然癒 -->
+
+    <div class="game">
+
+      <h2>🌿 東方自然癒</h2>
+
+      <ul>
+
+        <li>第10節：霧の湖ルート選択</li>
+
+        <li>第11節：ルーミア・大妖精・チルノ戦前</li>
+
+        <li>金の数：1,734,729個</li>
+
+        <li>博麗靈夢：Lv.100</li>
+
+        <li>霧雨魔理沙：Lv.100</li>
+
+        <li>鈴仙・優曇華院・イナバ：Lv.100</li>
+
+        <li>藤原妹紅：Lv.100</li>
+
+        <li>アリス・マーガトロイド：Lv.100</li>
+
+        <li>瀬笈葉：Lv.100</li>
+
+        <li>総プレイ時間：29時間59分12秒</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- マリオシリーズ -->
+
+    <div class="game">
+
+      <h2>🍄 マリオシリーズ</h2>
+
+      <ul>
+
+        <li>
+          スーパーマリオ 3Dワールド：
+          ワールドクラウンまで解放済み
+        </li>
+
+        <li>
+          フューリーワールド：全クリ
+        </li>
+
+        <li>
+          スーパーマリオブラザーズ ワンダー：全クリ
+        </li>
+
+        <li>
+          マリオパーティ ジャンボリー：ほぼ全クリ
+        </li>
+
+        <li>
+          マリオカート ワールド：
+          対CPUグランプリ＆サバイバル全1位、
+          ミラーモード解放済み
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 東方Project -->
+
+    <div class="game">
+
+      <h2>🌸 東方Project</h2>
+
+      <ul>
+
+        <li>
+          ダンマクカグラ ファンタジア・ロスト：
+          ストーリーモードクリア、
+          初見で3回ALL BRILLIANT（AB）
+        </li>
+
+        <li>
+          東方紅魔郷：
+          Easy クリア
+          （1コンティニュー・5ボム使用）
+        </li>
+
+        <li>
+          東方紅魔郷：
+          Normal ノーコンティニュー 4面
+        </li>
+
+        <li>
+          東方永夜抄：
+          Normal ノーコンティニュー 4面・
+          マスタースパークまで
+        </li>
+
+        <li>
+          東方剛欲異聞：
+          霊夢 第三話クリア
+        </li>
+
+        <li>
+          東方剛欲異聞：
+          魔理沙 第三話クリア
+        </li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- Back -->
+
+    <a
+      class="back"
+      href="index.html"
+    >
       ← トップページへ戻る
     </a>
 
+
   </main>
 
+
+
+  <!-- =========================
+       Footer
+  ========================= -->
+
   <footer>
+
     © 2026 ふちまるプロジェクト
+
   </footer>
+
 
 </body>
 </html>
