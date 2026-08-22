@@ -1,0 +1,179 @@
+<!-- =========================
+     News
+========================= -->
+
+<section id="news">
+
+  <div class="news-inner">
+
+    <h2>📰 News</h2>
+
+    <p class="news-subtitle">
+      最新情報
+    </p>
+
+    <div class="news-list">
+
+      <!-- News 1 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/22 18:07
+        </div>
+
+        <div class="news-title">
+          公式サイトを公開しました！
+        </div>
+
+      </div>
+
+
+      <!-- News 2 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/22 17:26
+        </div>
+
+        <div class="news-title">
+          実績情報を更新しました！
+        </div>
+
+      </div>
+
+
+      <!-- News 3 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/21 21:00
+        </div>
+
+        <div class="news-title">
+          ふちまるプロジェクトのサイト制作を開始しました！
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Newsページへのリンク -->
+
+    <a
+      class="news-more"
+      href="./news.html"
+    >
+      News 最新情報を見る →
+    </a>
+
+  </div>
+
+</section>
+
+
+<style>
+
+/* =========================
+   News
+========================= */
+
+#news {
+  position: relative;
+  overflow: hidden;
+  padding: 70px 20px;
+  background: #f5f7ff;
+}
+
+.news-inner {
+  max-width: 900px;
+  margin: auto;
+}
+
+#news h2 {
+  margin: 0;
+  text-align: center;
+  color: #5146c7;
+  font-size: 32px;
+}
+
+.news-subtitle {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.news-list {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
+}
+
+.news-item {
+  padding: 18px 25px;
+  border-bottom: 1px solid #eee;
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  color: #5146c7;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.news-title {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.news-more {
+  display: block;
+  width: fit-content;
+  margin: 25px auto 0;
+  padding: 10px 25px;
+  border-radius: 999px;
+  background: #5146c7;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.news-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
+}
+
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 700px) {
+
+  #news {
+    padding: 50px 15px;
+  }
+
+  #news h2 {
+    font-size: 28px;
+  }
+
+  .news-item {
+    padding: 16px 20px;
+  }
+
+  .news-title {
+    font-size: 15px;
+  }
+
+}
+
+</style>
