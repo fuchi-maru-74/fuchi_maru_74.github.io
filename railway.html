@@ -20,31 +20,12 @@
       background: #5146c7;
       color: white;
       text-align: center;
-      padding: 50px 20px;
+      padding: 45px 20px;
     }
 
     header h1 {
       margin: 0;
       font-size: 42px;
-    }
-
-    header p {
-      margin-top: 8px;
-      font-size: 17px;
-    }
-
-    /* 注意書き */
-
-    .notice {
-      max-width: 850px;
-      margin: 25px auto 0;
-      padding: 15px 20px;
-      text-align: center;
-      background: #fff4f4;
-      border: 1px solid #e5baba;
-      border-radius: 14px;
-      font-weight: bold;
-      color: #8b3030;
     }
 
     main {
@@ -53,7 +34,7 @@
       padding: 50px 20px;
     }
 
-    .section {
+    .railway {
       background: white;
       padding: 30px;
       margin-bottom: 25px;
@@ -61,119 +42,34 @@
       box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
     }
 
-    .section h2 {
+    .railway h2 {
+      color: #5146c7;
       margin-top: 0;
-      color: #5146c7;
     }
 
-    /* 作品一覧 */
-
-    .works {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 20px;
+    .railway ul {
+      padding-left: 25px;
+      margin-bottom: 0;
     }
 
-    .work {
-      background: white;
-      padding: 25px;
-      border-radius: 18px;
-      box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
-      transition: 0.2s;
-    }
-
-    .work:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 12px 30px rgba(60, 70, 120, 0.14);
-    }
-
-    .work h3 {
-      margin-top: 0;
-      color: #5146c7;
-      font-size: 22px;
-    }
-
-    .work p {
-      margin-bottom: 8px;
-    }
-
-    .work-date {
-      font-size: 14px;
-      color: #777;
-    }
-
-    .work-button {
-      display: inline-block;
-      margin-top: 12px;
-      padding: 8px 18px;
-      border-radius: 999px;
-      background: #5146c7;
-      color: white;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-
-    .work-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 5px 12px rgba(81, 70, 199, 0.25);
-    }
-
-    /* 詳細 */
-
-    .quote {
-      margin: 25px 0;
-      padding: 20px;
-      border-left: 5px solid #5146c7;
-      background: #f4f3ff;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    .message {
-      background: #f8f8ff;
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .info {
-      display: grid;
-      grid-template-columns: 150px 1fr;
-      gap: 8px 15px;
-    }
-
-    .info strong {
-      color: #5146c7;
-    }
-
-    .links {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    .link-button {
-      display: inline-block;
-      padding: 10px 20px;
-      border-radius: 999px;
-      background: #5146c7;
-      color: white;
-      text-decoration: none;
-      transition: 0.2s;
-    }
-
-    .link-button:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
+    .railway li {
+      margin-bottom: 6px;
     }
 
     .back {
       display: inline-block;
-      margin-top: 10px;
+      margin-top: 20px;
       padding: 10px 25px;
       border-radius: 999px;
       background: #5146c7;
       color: white;
       text-decoration: none;
+      transition: 0.2s;
+    }
+
+    .back:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
     }
 
     footer {
@@ -184,7 +80,6 @@
     }
 
     @media (max-width: 700px) {
-
       header h1 {
         font-size: 34px;
       }
@@ -193,24 +88,9 @@
         padding: 35px 15px;
       }
 
-      .section {
+      .railway {
         padding: 25px;
       }
-
-      .works {
-        grid-template-columns: 1fr;
-      }
-
-      .info {
-        grid-template-columns: 1fr;
-        gap: 2px;
-      }
-
-      .notice {
-        margin-left: 15px;
-        margin-right: 15px;
-      }
-
     }
   </style>
 </head>
@@ -225,122 +105,170 @@
 
   <header>
 
-    <h1>🚃 鉄道 </h1>
+    <h1>🚃 Railway</h1>
 
     <p>
-      鉄道系紹介
+      鉄道について
     </p>
 
   </header>
 
-<body>
 
-  <header>
-    <h1>🚃 鉄道</h1>
-    <p>ふちまるプロジェクト</p>
-  </header>
+
+  <!-- =========================
+       Main
+  ========================= -->
 
   <main>
 
-    <section>
-      <h2>🚃 鉄道について</h2>
-      <p>
-        鉄道が大好きです！
-      </p>
-      <p>
-        撮り鉄・乗り鉄・音鉄・車両観察など、
-        さまざまな楽しみ方をしています。
-      </p>
-    </section>
 
- <section>
+    <!-- 好きな鉄道会社 -->
+
+    <div class="railway">
+
       <h2>🚉 特に好きな鉄道会社</h2>
-      <ul>
-        <li>JR（全体）</li>
-        <li>東京地下鉄</li>
-        <li>西日本鉄道</li>
-      </ul>
-    </section>
 
-    <section>
+      <ul>
+
+        <li>JR（全体）</li>
+
+        <li>東京地下鉄</li>
+
+        <li>西日本鉄道</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 好きな車両 -->
+
+    <div class="railway">
+
       <h2>🚆 好きな車両</h2>
 
-      <div class="train-card">
-        <h3>JR九州 821系</h3>
-        <p>
-          JR九州の近郊型電車。
-          特に好きな車両のひとつです。
-        </p>
-      </div>
+      <ul>
 
-      <div class="train-card">
-        <h3>近鉄 2610系</h3>
-        <p>
-          近畿日本鉄道の車両。
-          こちらもお気に入りの車両です。
-        </p>
-      </div>
-    </section>
+        <li>JR九州 821系</li>
 
-    <section>
+        <li>近鉄 2610系</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 好きな路線 -->
+
+    <div class="railway">
+
       <h2>🛤️ 好きな路線</h2>
-      <ul>
-        <li>福岡市地下鉄 空港線</li>
-        <li>JR九州 香椎線</li>
-        <li>JR東日本 山手線</li>
-        <li>JR中央本線</li>
-        <li>近鉄奈良線</li>
-      </ul>
-    </section>
 
-    <section>
-      <h2>📸 鉄道の楽しみ方</h2>
       <ul>
-        <li>撮り鉄</li>
-        <li>乗り鉄</li>
-        <li>音鉄</li>
-        <li>車両観察</li>
+
+        <li>福岡市地下鉄 空港線</li>
+
+        <li>JR九州 香椎線</li>
+
+        <li>JR東日本 山手線</li>
+
+        <li>JR中央本線</li>
+
+        <li>近鉄奈良線</li>
+
       </ul>
+
+    </div>
+
+
+
+    <!-- 鉄道の楽しみ方 -->
+
+    <div class="railway">
+
+      <h2>📸 鉄道の楽しみ方</h2>
+
+      <ul>
+
+        <li>撮り鉄</li>
+
+        <li>乗り鉄</li>
+
+        <li>音鉄</li>
+
+        <li>車両観察</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 好きな駅 -->
+
+    <div class="railway">
+
+      <h2>🚉 特に好きな駅</h2>
+
+      <ul>
+
+        <li>福岡県 博多駅</li>
+
+        <li>福岡県 門司港駅</li>
+
+        <li>大阪府 大阪駅</li>
+
+        <li>大阪府 石切駅</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 鉄道関連 -->
+
+    <div class="railway">
+
+      <h2>🎥 鉄道関連でやっていること</h2>
+
+      <ul>
+
+        <li>写真撮影</li>
+
+        <li>乗車記録</li>
+
+        <li>動画制作</li>
+
+        <li>鉄道音収録</li>
+
+      </ul>
+
+    </div>
+
+
+
+    <!-- 一言 -->
+
+    <div class="railway">
+
+      <h2>💬 鉄道についての一言</h2>
 
       <p>
-        写真を撮ったり、実際に列車へ乗ったり、
-        鉄道音を楽しんだり、車両そのものを観察したりしています。
-      </p>
-    </section>
 
-    <section>
-      <h2>🚉 特に好きな駅</h2>
-      <ul>
-        <li>福岡県・博多駅</li>
-        <li>福岡県・門司港駅</li>
-        <li>大阪府・大阪駅</li>
-        <li>大阪府・石切駅</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🎥 鉄道関連でやっていること</h2>
-      <ul>
-        <li>写真撮影</li>
-        <li>乗車記録</li>
-        <li>動画制作</li>
-        <li>鉄道音収録</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>💬 鉄道について</h2>
-
-      <div class="quote">
         最高～！<br>
         いつも乗らせて頂いている身として、<br>
         鉄道の関係者様方に感謝です！
-      </div>
-    </section>
 
-      <!-- =========================
-         Back
-    ========================= -->
+      </p>
+
+    </div>
+
+
+
+    <!-- Back -->
 
     <a
       class="back"
@@ -360,9 +288,7 @@
 
   <footer>
 
-    <p>
-      © 2026 ふちまるプロジェクト
-    </p>
+    © 2026 ふちまるプロジェクト
 
   </footer>
 
