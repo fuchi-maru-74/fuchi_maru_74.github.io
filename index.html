@@ -455,6 +455,79 @@
      News
 ========================= -->
 
+<section id="news">
+
+  <div class="news-inner">
+
+    <h2>📰 News</h2>
+
+    <p class="news-subtitle">
+      最新情報
+    </p>
+
+    <div class="news-list">
+
+      <!-- News 1 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/22 18:07
+        </div>
+
+        <div class="news-title">
+          公式サイトを公開しました！
+        </div>
+
+      </div>
+
+
+      <!-- News 2 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/22 17:26
+        </div>
+
+        <div class="news-title">
+          実績情報を更新しました！
+        </div>
+
+      </div>
+
+
+      <!-- News 3 -->
+
+      <div class="news-item">
+
+        <div class="news-date">
+          2026/08/21 21:00
+        </div>
+
+        <div class="news-title">
+          ふちまるプロジェクトのサイト制作を開始しました！
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- Newsページへのリンク -->
+
+    <a
+      class="news-more"
+      href="./news.html"
+    >
+      News 最新情報を見る →
+    </a>
+
+  </div>
+
+</section>
+
+
 <style>
 
 /* =========================
@@ -468,136 +541,95 @@
   background: #f5f7ff;
 }
 
-/* 背景の図形 */
-#news::before {
-  content: "";
-  position: absolute;
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  background: rgba(100, 130, 255, 0.12);
-  top: -60px;
-  left: -50px;
+.news-inner {
+  max-width: 900px;
+  margin: auto;
 }
 
-#news::after {
-  content: "";
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  border-radius: 30px;
-  background: rgba(255, 100, 150, 0.10);
-  right: -70px;
-  bottom: -80px;
-  transform: rotate(20deg);
+#news h2 {
+  margin: 0;
+  text-align: center;
+  color: #5146c7;
+  font-size: 32px;
 }
 
-/* 中身を図形より前に */
-#news .section-title,
-#news .news {
-  position: relative;
-  z-index: 1;
+.news-subtitle {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  color: #666;
 }
 
-/* ニュース一覧 */
-.news {
-  max-width: 800px;
-  margin: 30px auto 0;
+.news-list {
+  background: white;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(60, 70, 120, 0.08);
 }
 
-/* ニュース1件 */
 .news-item {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
-  padding: 18px 20px;
-  margin-bottom: 12px;
-
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  padding: 18px 25px;
+  border-bottom: 1px solid #eee;
 }
 
-/* 日付 */
-.news-item .date {
-  font-size: 0.9rem;
-  color: #777;
-  white-space: nowrap;
+.news-item:last-child {
+  border-bottom: none;
 }
 
-/* ニュース本文 */
-.news-item .text {
+.news-date {
+  color: #5146c7;
+  font-size: 14px;
   font-weight: bold;
+}
+
+.news-title {
+  margin-top: 3px;
+  font-size: 16px;
+}
+
+.news-more {
+  display: block;
+  width: fit-content;
+  margin: 25px auto 0;
+  padding: 10px 25px;
+  border-radius: 999px;
+  background: #5146c7;
+  color: white;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.news-more:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(81, 70, 199, 0.25);
 }
 
 
 /* =========================
-   スマホ対応
+   Mobile
 ========================= */
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
   #news {
-    padding: 55px 15px;
+    padding: 50px 15px;
+  }
+
+  #news h2 {
+    font-size: 28px;
   }
 
   .news-item {
-    display: block;
+    padding: 16px 20px;
   }
 
-  .news-item .date {
-    display: block;
-    margin-bottom: 6px;
+  .news-title {
+    font-size: 15px;
   }
 
 }
 
 </style>
-
-
-<section id="news">
-
-  <div class="section-title">
-
-    <h2>News</h2>
-
-    <p>最新情報</p>
-
-  </div>
-
-
-  <div class="news">
-
-    <div class="news-item">
-
-      <span class="date">
-        2026/08/22 16:10
-      </span>
-
-      <span class="text">
-        サイトが完成しました！
-      </span>
-
-    </div>
-
-
-    <div class="news-item">
-
-      <span class="date">
-        2026/08/22 16:10
-      </span>
-
-      <span class="text">
-        順次更新予定！
-      </span>
-
-    </div>
-
-  </div>
-
-</section>
     
 
     
